@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Brick
+comment1.params=newMapX\ newMapY
+comment1.target=Brick(int,\ int)
+comment1.text=\r\n\ Defines\ the\ image\ for\ the\ brick\r\n
+comment2.params=
+comment2.target=Brick()
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\r\n\ If\ the\ world\ is\ world\ four\ or\ five,\ the\ image\ will\ be\ changed\ to\ the\ bricks\ image.\r\n
+numComments=4

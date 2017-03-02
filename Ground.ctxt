@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Ground
+comment1.params=newMapX\ newMapY
+comment1.target=Ground(int,\ int)
+numComments=2

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Mushroom
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ Calls\ the\ methods\ to\ move\ the\ Mushroom\ and\ see\ if\ it\ is\ colliding\ with\ mario.\r\n
+comment2.params=
+comment2.target=void\ checkHit()
+comment2.text=\r\n\ Do\ something\ if\ the\ Mushroom\ Collides\ with\ mario,\ dependent\ on\ which\ type\ of\ mario\ is\ in\ the\ world.\r\n\ If\ the\ Mushroom\ collides\ with\ marioG,\ remove\ the\ mushroom\r\n\ If\ the\ Mushroom\ collides\ with\ mario,\ remove\ the\ mushroom\r\n\ If\ the\ Mushroom\ collides\ with\ marioS,\ call\ a\ method\ that\ will\ turn\ marioS\ into\ mario\r\n
+comment3.params=
+comment3.target=void\ moveMushroom()
+comment3.text=\r\n\ This\ method\ will\ move\ the\ Mushroom.\r\n\ If\ there\ is\ a\ block\ to\ the\ right\ of\ the\ Mushroom,\ it\ will\ move\ left\ until\ it\ hits\ another\ object.\r\n\ If\ there\ is\ a\ block\ to\ the\ left\ of\ the\ Mushroom,\ it\ will\ move\ left\ until\ it\ hits\ another\ object.\r\n\ If\ there\ is\ no\ object\ below\ the\ Mushroom,\ it\ will\ fall\ until\ there\ is\ an\ object\ underneath\ the\ Mushroom.\r\n
+numComments=4

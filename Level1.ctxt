@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Level1
+comment1.params=
+comment1.target=Level1()
+comment2.params=
+comment2.target=void\ rebuildWorld()
+comment2.text=\r\n\ When\ called,\ removes\ all\ objects\ in\ the\ world\ and\ rebuilds\ it.\r\n\ If\ lives\ are\ less\ than\ 0,\ the\ world\ is\ set\ to\ the\ game\ over\ world.\r\n
+comment3.params=
+comment3.target=void\ stopMusic()
+comment3.text=\r\n\ Stops\ the\ music\ when\ called\r\n
+comment4.params=
+comment4.target=void\ updateScoreboard()
+comment4.text=\r\n\ Updates\ the\ scoreboard\ in\ the\ world\r\n
+comment5.params=
+comment5.target=void\ buildWorld()
+comment5.text=\r\n\ Calls\ all\ the\ methods\ to\ add\ the\ objects\ to\ the\ world\r\n
+comment6.params=
+comment6.target=void\ addScoreboard()
+comment6.text=\r\n\ Adds\ the\ scoreboard\ to\ the\ world\r\n
+comment7.params=
+comment7.target=void\ makeMap()
+comment8.params=
+comment8.target=void\ startingArea()
+numComments=9

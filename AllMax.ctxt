@@ -2,4 +2,12 @@
 comment0.target=AllMax
 comment1.params=
 comment1.target=void\ act()
-numComments=2
+comment2.params=
+comment2.target=void\ moveHorizontally()
+comment3.params=
+comment3.target=void\ moveVertically()
+comment4.params=
+comment4.target=void\ jump()
+comment5.params=
+comment5.target=void\ animateMax()
+numComments=6

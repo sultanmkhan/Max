@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Block
-comment1.params=newMapX\ newMapY
-comment1.target=Block(int,\ int)
+comment1.params=
+comment1.target=Block()
 comment1.text=\r\n\ This\ will\ define\ the\ image\ for\ the\ block\r\n
 comment2.params=
 comment2.target=void\ act()

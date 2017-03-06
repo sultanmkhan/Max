@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.target=Lava
-comment0.text=\r\n\ A\ firey\ row\ to\ decorate\ the\ bottom\ of\ the\ pits\ in\ the\ castles\r\n\ \r\n\ @author\ (Dylan\ Powell\ and\ Sean\ Eastley)\ \r\n\ @version\ (January\ 21,\ 2015)\r\n
-comment1.params=newMapX\ newMapY
-comment1.target=Lava(int,\ int)
-comment2.params=
-comment2.target=void\ act()
-numComments=3

@@ -31,7 +31,7 @@ public class StartMenu1 extends World
         {
             theme.stop();
             clicked.play();
-            Greenfoot.setWorld(new Level1());
+            Greenfoot.setWorld(new Stage1());
         }
         if (Greenfoot.isKeyDown("down"))
         {

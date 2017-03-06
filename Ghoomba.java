@@ -10,15 +10,12 @@ public class Ghoomba extends MovingEnemies
     private int imageChangeDelayCount; //ticks up to change the image
     private boolean imminentDeath; //determines if the ghoomba is about to die
     private boolean hitEdge = false; //initialize value for hitEdge. Determines whether the ghoomba has hit the edge
-    int mapX;
-    int mapY;
+    
     /**
      * Initializes values and images for the ghoomba
      */
-    public Ghoomba(int newMapX, int newMapY)
+    public Ghoomba()
     {
-        mapX = newMapX;
-        mapY = newMapY;
         imageL = new GreenfootImage("GhoombaL.png");
         imageR = new GreenfootImage("GhoombaR.png");
         setImage(imageL);

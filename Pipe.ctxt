@@ -1,5 +1,3 @@
 #BlueJ class context
 comment0.target=Pipe
-comment1.params=newMapX\ newMapY
-comment1.target=Pipe(int,\ int)
-numComments=2
+numComments=1

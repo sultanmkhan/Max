@@ -62,7 +62,7 @@ public class MaxS extends AllMax
    
     private void setMaxAsSmall()
     {
-        SWorld sWorld = (SWorld)getWorld();
+        MWorld sWorld = (MWorld)getWorld();
         sWorld.maxIsSmall();
         MaxSetAsSmall= true;
     }
@@ -117,7 +117,7 @@ public class MaxS extends AllMax
                 xSpeed = xSpeed +1;
             }
             xSpeed = 5;
-            SWorld sWorld = (SWorld)getWorld();
+            MWorld sWorld = (MWorld)getWorld();
             sWorld.maxL = false;
         }
         if (Greenfoot.isKeyDown("left"))
@@ -130,7 +130,7 @@ public class MaxS extends AllMax
             {
                 xSpeed = xSpeed -1;
             }
-            SWorld sWorld = (SWorld)getWorld();
+            MWorld sWorld = (MWorld)getWorld();
             sWorld.maxL = true;
         }
         if (!Greenfoot.isKeyDown("left") && !Greenfoot.isKeyDown("right"))
@@ -197,7 +197,7 @@ public class MaxS extends AllMax
         if(getY() >= 395)
         {
             fell = true;
-            SWorld sWorld = (SWorld)getWorld();
+            MWorld sWorld = (MWorld)getWorld();
             sWorld.maxIsSmall();
             sWorld.decreaseLives();
         }
@@ -216,7 +216,7 @@ public class MaxS extends AllMax
     public void grow()
     {
         grow.play();
-        SWorld world = (SWorld)getWorld();    
+        MWorld world = (MWorld)getWorld();    
         Actor futureMain = new Max();
         world.addObject(futureMain, getX(), getY(), false); 
         world.mainActor = futureMain;
@@ -229,7 +229,7 @@ public class MaxS extends AllMax
    
     private void animateMax()
     {
-        SWorld sWorld = (SWorld)getWorld();
+        MWorld sWorld = (MWorld)getWorld();
         mLeft = sWorld.maxL;
         if (mLeft == true && Greenfoot.isKeyDown("left"))
         {
@@ -293,7 +293,7 @@ public class MaxS extends AllMax
     {
         if (getOneObjectAtOffset (-getImage().getWidth()/2, 0, Enemies.class)!= null && invincibilityDelayCount >= invincibilityTime)
         {
-            SWorld sWorld = (SWorld)getWorld();
+            MWorld sWorld = (MWorld)getWorld();
             sWorld.maxIsSmall();
             sWorld.decreaseLives();
             gotHit = true;
@@ -301,7 +301,7 @@ public class MaxS extends AllMax
         
         if (getOneObjectAtOffset (getImage().getWidth()/2, 0, Enemies.class)!= null && invincibilityDelayCount >= invincibilityTime)
         {
-            SWorld sWorld = (SWorld)getWorld();
+            MWorld sWorld = (MWorld)getWorld();
             sWorld.maxIsSmall();
             sWorld.decreaseLives();
             gotHit = true;
@@ -310,22 +310,22 @@ public class MaxS extends AllMax
         
         if (gotHit == true)
         {
-            SWorld sWorld = (SWorld)getWorld();
+            MWorld sWorld = (MWorld)getWorld();
             die.play();
-            if (getWorld() instanceof Level1)
+            if (getWorld() instanceof Stage1)
             {
-                Level1 level1 = (Level1)getWorld();
-                level1.rebuildWorld();
+                Stage1 level1 = (Stage1)getWorld();
+               // Stage1.rebuildWorld();
             }
            
         }
         if (fell == true)
         {
-            SWorld sWorld = (SWorld)getWorld();
+            MWorld sWorld = (MWorld)getWorld();
             die.play();
-            if (getWorld() instanceof Level1)
+            if (getWorld() instanceof Stage1)
             {
-                Level1 level1 = (Level1)getWorld();
+                Stage1 level1 = (Stage1)getWorld();
                 level1.rebuildWorld();
             }
             

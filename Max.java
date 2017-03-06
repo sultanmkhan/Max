@@ -65,7 +65,7 @@ public class Max extends AllMax
     
     private void setMaxAsBig()
     {
-        SWorld sWorld = (SWorld)getWorld();
+        MWorld sWorld = (MWorld)getWorld();
         sWorld.maxIsBig();
         maxSetAsBig = true;
     }
@@ -116,7 +116,7 @@ public class Max extends AllMax
             {
                 xSpeed = xSpeed +1;
             }
-            SWorld sWorld = (SWorld)getWorld();
+            MWorld sWorld = (MWorld)getWorld();
             sWorld.maxL = false;
         }
         if (Greenfoot.isKeyDown("left"))
@@ -129,7 +129,7 @@ public class Max extends AllMax
             {
                 xSpeed = xSpeed -1;
             }
-            SWorld sWorld = (SWorld)getWorld();
+            MWorld sWorld = (MWorld)getWorld();
             sWorld.maxL = true;
         }
         if (!Greenfoot.isKeyDown("left") && !Greenfoot.isKeyDown("right"))
@@ -172,11 +172,11 @@ public class Max extends AllMax
             if (Greenfoot.isKeyDown("down"))
             {
                 down.play();
-                if (getWorld() instanceof Level1)
+                if (getWorld() instanceof Stage1)
                 {
-                    Level1 myWorld = (Level1)getWorld();
-                    myWorld.stopMusic();
-                    Greenfoot.setWorld(new Level1());
+                    Stage1 myWorld = (Stage1)getWorld();
+                   // myWorld.stopMusic();/////need
+                    Greenfoot.setWorld(new Stage1());
                 }
                 
             }
@@ -201,7 +201,7 @@ public class Max extends AllMax
         if(getY() >= 395)
         {
             fell = true;
-            SWorld sWorld = (SWorld)getWorld();
+            MWorld sWorld = (MWorld)getWorld();
             sWorld.maxIsSmall();
             sWorld.decreaseLives();
         }
@@ -219,7 +219,7 @@ public class Max extends AllMax
     
     private void animateMax()
     {
-        SWorld sWorld = (SWorld)getWorld();
+        MWorld sWorld = (MWorld)getWorld();
         mLeft = sWorld.maxL;
         if (mLeft == true && Greenfoot.isKeyDown("left"))
         {
@@ -284,19 +284,19 @@ public class Max extends AllMax
         if(getY() >= 395)
         {
             fell = true;
-            SWorld sWorld = (SWorld)getWorld();
+            MWorld sWorld = (MWorld)getWorld();
             sWorld.maxIsSmall();
             sWorld.decreaseLives();
         }
         if (getOneObjectAtOffset (-getImage().getWidth()/2-1, 0, Enemies.class)!= null && invincibilityDelayCount >= invincibilityTime)
         {
-            SWorld sWorld = (SWorld)getWorld();
+            MWorld sWorld = (MWorld)getWorld();
             sWorld.maxIsSmall();
             gotHit = true;
         }
         if (getOneObjectAtOffset (getImage().getWidth()/2+1, 0, Enemies.class)!= null && invincibilityDelayCount >= invincibilityTime)
         {
-            SWorld sWorld = (SWorld)getWorld();
+            MWorld sWorld = (MWorld)getWorld();
             sWorld.maxIsSmall();
             gotHit = true;
         }
@@ -306,7 +306,7 @@ public class Max extends AllMax
         if (gotHit == true)
         {
             die.play();
-            SWorld world = (SWorld)getWorld();    
+            MWorld world = (MWorld)getWorld();    
             Actor futureMain = new MaxS();
             world.addObject(futureMain, getX(), getY(), false); 
             world.mainActor = futureMain;
@@ -318,11 +318,11 @@ public class Max extends AllMax
         }
         if (fell == true)
         {
-            SWorld sWorld = (SWorld)getWorld();
+            MWorld sWorld = (MWorld)getWorld();
             die.play();
-            if (getWorld() instanceof Level1)
+            if (getWorld() instanceof Stage1)
             {
-                Level1 level1 = (Level1)getWorld();
+                Stage1 level1 = (Stage1)getWorld();
                 level1.rebuildWorld();
             }
             

@@ -24,18 +24,17 @@ public class Heart extends Powerups
      */
     private void checkHit()
     {
-        //MarioG g = (MarioG) getOneIntersectingObject(MarioG.class);
         Max m = (Max) getOneIntersectingObject(Max.class);
         MaxS s = (MaxS) getOneIntersectingObject(MaxS.class);
         
         if(m != null)
         {
             oneup.play();
-            SWorld sWorld = (SWorld)getWorld();
+            MWorld sWorld = (MWorld)getWorld();
             sWorld.increaseLives();
-            if (getWorld() instanceof Level1)
+            if (getWorld() instanceof Stage1)
             {
-                Level1 level1 = (Level1)sWorld;
+                Stage1 level1 = (Stage1)sWorld;
                 level1.updateScoreboard();
             }
            
@@ -46,11 +45,11 @@ public class Heart extends Powerups
         if(s != null)
         {
             oneup.play();
-            SWorld sWorld = (SWorld)getWorld();
+            MWorld sWorld = (MWorld)getWorld();
             sWorld.increaseLives();
-            if (getWorld() instanceof Level1)
+            if (getWorld() instanceof Stage1)
             {
-                Level1 level1 = (Level1)sWorld;
+                Stage1 level1 = (Stage1)sWorld;
                 level1.updateScoreboard();
             }
             

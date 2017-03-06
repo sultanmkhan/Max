@@ -7,14 +7,11 @@ public class Block extends Actor
     private GreenfootImage imageSpent;
     private int scrolled; //determines how far the main actor has moved
     GreenfootSound bump = new GreenfootSound("Bump.wav");
-    int mapX;
-    int mapY;
     /**
      * This will define the image for the block
      */
-    public Block(int newMapX, int newMapY){
-        mapX = newMapX;
-        mapY = newMapY;
+    public Block()
+    {
         imageSpent = new GreenfootImage("SpentBlock.png");
     }
 
@@ -44,24 +41,24 @@ public class Block extends Actor
         if (bumped == true)
         {
             bump.play();
-            SWorld sWorld = (SWorld)getWorld();
-            scrolled = ((SWorld)getWorld()).getUnivX(getX());
+            MWorld sWorld = (MWorld)getWorld();
+            scrolled = ((MWorld)getWorld()).getUnivX(getX());
             if(sWorld.maxBig == true)
             {
                 powerUpChance = Greenfoot.getRandomNumber(10);
-                if(getWorld() instanceof Level1 || getWorld() instanceof Level1){
+                if(getWorld() instanceof Stage1 || getWorld() instanceof Stage1){
                     if (powerUpChance <= 7)
                     {
-                        ((SWorld)getWorld()).addObject(new Heart(),scrolled, getY() - 32, true);
+                        ((MWorld)getWorld()).addObject(new Heart(),scrolled, getY() - 32, true);
                     }
                     if (powerUpChance > 7)
                     {
-                        ((SWorld)getWorld()).addObject(new Heart(),scrolled, getY() - 32, true);
+                        ((MWorld)getWorld()).addObject(new Heart(),scrolled, getY() - 32, true);
                     }
                 }else{
                     if (powerUpChance > 7)
                     {
-                        ((SWorld)getWorld()).addObject(new Heart(),scrolled, getY() - 32, true);
+                        ((MWorld)getWorld()).addObject(new Heart(),scrolled, getY() - 32, true);
                     }
                 }
 
@@ -73,11 +70,11 @@ public class Block extends Actor
                 powerUpChance = Greenfoot.getRandomNumber(10);
                 if (powerUpChance <= 7)
                 {
-                    ((SWorld)getWorld()).addObject(new Mushroom(),scrolled, getY() - 32, true);
+                    ((MWorld)getWorld()).addObject(new Mushroom(),scrolled, getY() - 32, true);
                 }
                 if (powerUpChance > 7)
                 {
-                    ((SWorld)getWorld()).addObject(new Heart(),scrolled, getY() - 32, true);
+                    ((MWorld)getWorld()).addObject(new Heart(),scrolled, getY() - 32, true);
                 }
                 bumped = false;
                 setImage(imageSpent);

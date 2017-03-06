@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Ghoomba
-comment1.params=newMapX\ newMapY
-comment1.target=Ghoomba(int,\ int)
+comment1.params=
+comment1.target=Ghoomba()
 comment1.text=\r\n\ Initializes\ values\ and\ images\ for\ the\ ghoomba\r\n
 comment2.params=
 comment2.target=void\ act()

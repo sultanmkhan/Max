@@ -180,7 +180,7 @@ public class Max extends Actor
                 {
                     Stage1 myWorld = (Stage1)getWorld();
                    // myWorld.stopMusic();/////need
-                    Greenfoot.setWorld(new Stage1());
+                    Greenfoot.setWorld(new Stage2());
                 }
                 
             }

@@ -141,10 +141,7 @@ public class Max extends Actor
             jump();
         }
     
-  
-    
-    
-    }
+      }
 
    
     private void moveVertically()
@@ -179,7 +176,7 @@ public class Max extends Actor
                 if (getWorld() instanceof Stage1)
                 {
                     Stage1 myWorld = (Stage1)getWorld();
-                   // myWorld.stopMusic();/////need
+                   myWorld.stopMusic();
                     Greenfoot.setWorld(new Stage2());
                 }
                 
@@ -304,14 +301,13 @@ public class Max extends Actor
             sWorld.maxIsSmall();
             gotHit = true;
         }
-       
-        
+             
         
         if (gotHit == true)
         {
             die.play();
             MWorld world = (MWorld)getWorld();    
-            Actor futureMain = new SmallMax();  //need
+            Actor futureMain = new SmallMax(); 
             world.addObject(futureMain, getX(), getY(), false); 
             world.mainActor = futureMain;
             world.maxIsSmall();

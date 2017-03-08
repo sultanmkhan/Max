@@ -34,7 +34,7 @@ public class Block extends Actor
         {
             bumped = true;
         }
-        if (getOneObjectAtOffset (0, getImage().getHeight()/2+1, MaxS.class)!= null && getImage() != imageSpent)
+        if (getOneObjectAtOffset (0, getImage().getHeight()/2+1, SmallMax.class)!= null && getImage() != imageSpent)
         {
             bumped = true;
         }

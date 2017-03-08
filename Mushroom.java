@@ -24,7 +24,7 @@ public class Mushroom extends Powerups
     private void checkHit()
     {
        Max m = (Max) getOneIntersectingObject(Max.class);
-        MaxS s = (MaxS) getOneIntersectingObject(MaxS.class);
+        SmallMax s = (SmallMax) getOneIntersectingObject(SmallMax.class);
        
         if(m != null)
         {

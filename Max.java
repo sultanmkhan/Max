@@ -2,7 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.List;
 
 
-public class Max extends AllMax
+public class Max extends Actor
 {
     private int invincibilityTime; //this is the number that the invincibilityDelayCount must pass before invincibility runs out
     private int invincibilityDelayCount; //this number ticks up to determine how long you are invincible
@@ -311,7 +311,7 @@ public class Max extends AllMax
         {
             die.play();
             MWorld world = (MWorld)getWorld();    
-            Actor futureMain = new MaxS();
+            Actor futureMain = new SmallMax();  //need
             world.addObject(futureMain, getX(), getY(), false); 
             world.mainActor = futureMain;
             world.maxIsSmall();

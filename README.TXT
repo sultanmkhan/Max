@@ -4,9 +4,9 @@ Tell the reader (someone who does not know anything about this project)
 all he/she needs to know. The comments should usually include at least:
 ------------------------------------------------------------------------
 
-PROJECT TITLE:
+PROJECT TITLE:Marios
 PURPOSE OF PROJECT:
-VERSION or DATE:
+VERSION or DATE:8/3/17
 HOW TO START THIS PROJECT:
-AUTHORS:
+AUTHORS:Abdul,Sultan,Singh
 USER INSTRUCTIONS:

@@ -1,12 +1,11 @@
 #BlueJ class context
-comment0.target=Block
+comment0.params=
+comment0.target=Block()
+comment0.text=\r\n\ This\ will\ define\ the\ image\ for\ the\ block\r\n
 comment1.params=
-comment1.target=Block()
-comment1.text=\r\n\ This\ will\ define\ the\ image\ for\ the\ block\r\n
+comment1.target=void\ act()
+comment1.text=\r\n\ This\ will\ run\ the\ checkHit\ method\ for\ the\ block\r\n
 comment2.params=
-comment2.target=void\ act()
-comment2.text=\r\n\ This\ will\ run\ the\ checkHit\ method\ for\ the\ block\r\n
-comment3.params=
-comment3.target=void\ checkHit()
-comment3.text=\r\n\ This\ will\ check\ if\ the\ block\ has\ been\ hit\ by\ mario\r\n\ If\ the\ block\ was\ hit\ by\ mario\ or\ marioG,\ then\ the\ block\ will\ create\ ammo\ or\ a\ heart,\ based\ on\ a\ random\ number.\r\n\ If\ the\ block\ was\ hit\ by\ marioS,\ then\ the\ block\ will\ create\ a\ mushroom\ or\ a\ heart,\ based\ on\ a\ random\ number.\r\n
-numComments=4
+comment2.target=void\ checkHit()
+comment2.text=\r\n\ This\ will\ check\ if\ the\ block\ has\ been\ hit\ by\ mario\r\n\ If\ the\ block\ was\ hit\ by\ mario\ or\ marioG,\ then\ the\ block\ will\ create\ ammo\ or\ a\ heart,\ based\ on\ a\ random\ number.\r\n\ If\ the\ block\ was\ hit\ by\ marioS,\ then\ the\ block\ will\ create\ a\ mushroom\ or\ a\ heart,\ based\ on\ a\ random\ number.\r\n
+numComments=3

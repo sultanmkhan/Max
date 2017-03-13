@@ -1,9 +1,8 @@
 #BlueJ class context
-comment0.target=ScoreBoard
-comment1.params=
-comment1.target=ScoreBoard()
-comment1.text=\r\n\ This\ will\ create\ the\ scoreboard\ background\ box\r\n
-comment2.params=lives
-comment2.target=void\ updateScore(int)
-comment2.text=\r\n\ This\ will\ update\ the\ score\ on\ the\ scoreboard.\r\n\ This\ makes\ the\ scoreboard\ display\ yellow\ text\ with\ the\ lives\ label\ and\ the\ lives\ as\ well\ as\ the\ ammunition\ label\ and\ the\ ammunition\ below\ it\r\n
-numComments=3
+comment0.params=
+comment0.target=ScoreBoard()
+comment0.text=\r\n\ This\ will\ create\ the\ scoreboard\ background\ box\r\n
+comment1.params=lives
+comment1.target=void\ updateScore(int)
+comment1.text=\r\n\ This\ will\ update\ the\ score\ on\ the\ scoreboard.\r\n\ This\ makes\ the\ scoreboard\ display\ yellow\ text\ with\ the\ lives\ label\ and\ the\ lives\ as\ well\ as\ the\ ammunition\ label\ and\ the\ ammunition\ below\ it\r\n
+numComments=2

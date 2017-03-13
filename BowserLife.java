@@ -2,6 +2,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.awt.Color;
 
 
+/**
+ * 
+ * 
+ * @author (Stars as2127,gs376,smk38) 
+ * @version (8/3/17)
+ */
 public class BowserLife extends Actor
 {
     private static final String healthLabel = "Health: "; //This will be displayed on the scoreboard before the number of hits left

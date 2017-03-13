@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class StartMenu3 here.
+ * Welcome Screen For the Game
  * 
- * @author (Dylan Powell and Sean Eastley) 
- * @version (January 21, 2015)
+ * @author (Stars as2127,gs376,smk38) 
+ * @version (8/3/17)
  */
 public class StartMenu1 extends World
 {
@@ -22,8 +22,10 @@ public class StartMenu1 extends World
         {
             theme.playLoop();
         }
+
+        prepare();
     }
-    
+
     public void act()
     {
         enterDelayCount ++;
@@ -38,5 +40,13 @@ public class StartMenu1 extends World
             clicked.play();
             Greenfoot.setWorld(new StartMenu2());
         }
+    }
+
+    /**
+     * Prepare the world for the start of the program. That is: create the initial
+     * objects and add them to the world.
+     */
+    private void prepare()
+    {
     }
 }

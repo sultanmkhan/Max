@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Second start menu
+ * This class shows help menu 
  * 
- * @author (Dylan Powell and Sean Eastley) 
- * @version (January 21, 2015)
+ * @author (Stars as2127,gs376,smk38) 
+ * @version (8/3/17)
  */
 public class StartMenu2 extends World
 {

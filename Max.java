@@ -2,6 +2,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.List;
 
 
+/**
+ * 
+ * 
+ * @author (Stars as2127,gs376,smk38) 
+ * @version (8/3/17)
+ */
 public class Max extends Actor
 {
     private int invincibilityTime; //this is the number that the invincibilityDelayCount must pass before invincibility runs out
@@ -14,7 +20,7 @@ public class Max extends Actor
     private boolean onGround; //this boolean shows whether or not you are on the ground
     private boolean gotHit; //this boolean shows whether or not mario was hit
     private boolean mLeft; //this boolean shows whether or not mario is left
-    public boolean maxSetAsBig = false; //this boolean shows whether or not sWorld has had its variables set for mario having a gun
+    public boolean maxSetAsBig = false; //this boolean shows whether or not sWorld has had its variables set for mario
     private boolean fell = false; //this boolean determines whether or not mario has fallen off of the world
     private int scrolled; //this int determines how far mario has moved in the x direction
     private int livesLeft; //this will store how many lives the player has left

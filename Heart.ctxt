@@ -1,12 +1,11 @@
 #BlueJ class context
-comment0.target=Heart
+comment0.params=
+comment0.target=void\ act()
+comment0.text=\r\n\ This\ will\ call\ the\ methods\ for\ moving\ the\ heart\ and\ checking\ if\ it\ was\ hit.\r\n
 comment1.params=
-comment1.target=void\ act()
-comment1.text=\r\n\ This\ will\ call\ the\ methods\ for\ moving\ the\ heart\ and\ checking\ if\ it\ was\ hit.\r\n
+comment1.target=void\ checkHit()
+comment1.text=\r\n\ This\ method\ will\ check\ if\ the\ heart\ is\ colliding\ with\ mario.\r\n\ If\ it\ is\ colliding\ with\ mario,\ the\ heart\ will\ be\ removed,\ the\ sound\ effect\ will\ be\ played\ and\ the\ lives\ counter\ will\ be\ updated.\r\n\ The\ scoreboard\ will\ also\ be\ updated\ based\ on\ which\ world\ the\ heart\ is\ in.\r\n
 comment2.params=
-comment2.target=void\ checkHit()
-comment2.text=\r\n\ This\ method\ will\ check\ if\ the\ heart\ is\ colliding\ with\ mario.\r\n\ If\ it\ is\ colliding\ with\ mario,\ the\ heart\ will\ be\ removed,\ the\ sound\ effect\ will\ be\ played\ and\ the\ lives\ counter\ will\ be\ updated.\r\n\ The\ scoreboard\ will\ also\ be\ updated\ based\ on\ which\ world\ the\ heart\ is\ in.\r\n
-comment3.params=
-comment3.target=void\ moveHeart()
-comment3.text=\r\n\ This\ method\ will\ move\ the\ heart.\r\n\ If\ there\ is\ a\ block\ to\ the\ right\ of\ the\ heart,\ it\ will\ move\ left\ until\ it\ hits\ another\ object.\r\n\ If\ there\ is\ a\ block\ to\ the\ left\ of\ the\ heart,\ it\ will\ move\ left\ until\ it\ hits\ another\ object.\r\n\ If\ there\ is\ no\ object\ below\ the\ heart,\ it\ will\ fall\ until\ there\ is\ an\ object\ underneath\ the\ heart.\r\n
-numComments=4
+comment2.target=void\ moveHeart()
+comment2.text=\r\n\ This\ method\ will\ move\ the\ heart.\r\n\ If\ there\ is\ a\ block\ to\ the\ right\ of\ the\ heart,\ it\ will\ move\ left\ until\ it\ hits\ another\ object.\r\n\ If\ there\ is\ a\ block\ to\ the\ left\ of\ the\ heart,\ it\ will\ move\ left\ until\ it\ hits\ another\ object.\r\n\ If\ there\ is\ no\ object\ below\ the\ heart,\ it\ will\ fall\ until\ there\ is\ an\ object\ underneath\ the\ heart.\r\n
+numComments=3

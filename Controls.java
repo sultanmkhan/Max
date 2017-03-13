@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Will display the controls to the user
+ *Assigns keyboard keys to user
  * 
- * @author (Dylan Powell and Sean Eastley) 
- * @version (January 21, 2015)
+ * @author (Stars as2127,gs376,smk38) 
+ * @version (8/3/17)
  */
 public class Controls extends World
 {

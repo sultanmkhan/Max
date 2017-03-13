@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Restart here.
+ * Gives user choice to exit or restart the game
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Stars as2127,gs376,smk38) 
+ * @version (8/3/17)
  */
 public class Restart extends World
 {
- static GreenfootSound themeMusic = new GreenfootSound("Menu theme.mp3");
- GreenfootSound enter1 = new GreenfootSound("Clicked.wav");
+    static GreenfootSound themeMusic = new GreenfootSound("Menu theme.mp3");
+    GreenfootSound enter1 = new GreenfootSound("Clicked.wav");
     /**
      * Constructor for objects of class Restart.
      * 
@@ -23,22 +23,22 @@ public class Restart extends World
             themeMusic.playLoop();
         }
     }
- public void act()
+
+    public void act()
     {
-         if(Greenfoot.isKeyDown("enter"))
+        if(Greenfoot.isKeyDown("enter"))
         {
-         Greenfoot.delay(10);
-         enter1.play(); 
-         themeMusic.stop();
-         Greenfoot.setWorld(new StartMenu1());
+            Greenfoot.delay(10);
+            enter1.play(); 
+            themeMusic.stop();
+            Greenfoot.setWorld(new StartMenu1());
         }
-        
-         if(Greenfoot.isKeyDown("down"))
+
+        if(Greenfoot.isKeyDown("down"))
         {
             enter1.play();
             Greenfoot.setWorld(new Exit());
         }
     }
-    
 
 }

@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Stage2()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Stage2.\r\n\ \r\n
+comment1.params=
+comment1.target=void\ rebuildWorld()
+comment1.text=\r\n\ When\ called,\ removes\ all\ objects\ in\ the\ world\ and\ rebuilds\ it.\r\n\ If\ lives\ are\ less\ than\ 0,\ the\ world\ is\ set\ to\ the\ game\ over\ world.\r\n
+comment2.params=
+comment2.target=void\ buildWorld()
+comment3.params=
+comment3.target=void\ addScoreboard()
+comment3.text=\r\n\ Adds\ the\ scoreboard\ to\ the\ world\r\n
+comment4.params=
+comment4.target=void\ stopMusic()
+comment4.text=\r\n\ Stops\ the\ music\ when\ called\r\n
+comment5.params=
+comment5.target=void\ area1()
+numComments=6

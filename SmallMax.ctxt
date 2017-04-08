@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=SmallMax()
+comment0.text=\r\n\ This\ will\ define\ variables\ for\ maxS.\r\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ Ticks\ up\ the\ DelayCounts\ and\ calls\ the\ methods\ for\ max\r\n
+comment2.params=
+comment2.target=void\ setmaxAsSmall()
+comment2.text=\r\n\ Sets\ the\ MWorld\ booleans\ to\ the\ appropriate\ ones\ for\ max\ being\ small\r\n
+comment3.params=
+comment3.target=void\ moveX()
+comment3.text=\r\n\ This\ will\ move\ max\ based\ on\ whether\ or\ not\ there\ are\ objects\ around\ max\ and\ keys\ are\ pressed.\r\n\ If\ the\ w\ key\ is\ pressed\ while\ an\ object\ is\ underneath\ max,\ he\ will\ jump.\ \r\n\ If\ the\ d\ key\ is\ pressed\ and\ there\ is\ no\ block\ to\ the\ right\ of\ max,\ he\ will\ move\ right.\r\n\ If\ the\ a\ key\ is\ pressed\ and\ there\ is\ no\ block\ to\ the\ left\ of\ max,\ he\ will\ move\ left.\r\n\ If\ the\ s\ key\ is\ pressed\ and\ there\ is\ a\ pipe\ below\ max,\ the\ world\ will\ change.\r\n
+comment4.params=
+comment4.target=void\ moveY()
+comment4.text=\r\n\ This\ method\ will\ move\ max\ vertically\ and\ then\ check\ if\ he\ should\ be\ removed\ because\ he\ is\ out\ of\ the\ world.\r\n\ It\ will\ also\ check\ if\ max\ should\ kill\ an\ enemy\ which\ he\ is\ standing\ on.\r\n
+comment5.params=
+comment5.target=void\ removeMax()
+comment5.text=\r\n\ This\ will\ remove\ max\ if\ he\ is\ hit\ by\ an\ enemy\ or\ an\ enemy\ projectile.\ It\ will\ also\ add\ a\ regular\ max\ in\ the\ same\ place\ as\ maxG\ was\ at.\r\n\ If\ max\ is\ at\ the\ bottom\ of\ the\ world,\ it\ will\ call\ the\ rebuildWorld\ method\ in\ whatever\ world\ max\ is\ currently\ in.\r\n\ This\ will\ also\ decrease\ the\ lives\ of\ the\ player\r\n
+comment6.params=
+comment6.target=void\ grow()
+comment6.text=\r\n\ When\ called,\ this\ method\ will\ replace\ small\ max\ with\ big\ max\r\n
+comment7.params=
+comment7.target=int\ getXCoord()
+comment7.text=\r\n\ When\ called,\ the\ X\ coordinate\ of\ max\ will\ be\ sent\r\n
+numComments=8
